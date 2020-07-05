@@ -1,0 +1,105 @@
+:root {
+  --a: hsl(217, 19%, 35%);
+  --b: hsl(214, 17%, 51%);
+  --c: hsl(212, 23%, 69%);
+  --d: hsl(210, 46%, 95%);
+}
+
+@media only screen and (max-width: 1440px) {
+  body {
+    background-color: var(--d);
+  }
+
+  .container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    size: 13px;
+  }
+
+  h3 {
+    font-weight: 700;
+  }
+
+  p {
+    font-weight: 500;
+  }
+
+  .targ {
+    background-color: hsl(0, 0%, 100%);
+    color: var(--a);
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    border-radius: 12px 12px 12px 12px;
+  }
+
+  .drawers {
+    height: 300px;
+    width: 300px;
+    border-radius: 12px 0px 0px 12px;
+  }
+
+  .content {
+    width: 400px;
+    margin: 15px 30px 15px 30px;
+  }
+
+  .person {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .profile-name {
+    margin-left: 15px;
+  }
+
+  .date {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .avatar {
+    border-radius: 100px;
+    width: 80px;
+  }
+
+  .share {
+    width: 50px;
+    height: 50px;
+    margin: 0 0 0 auto;
+    align-self: center;
+    background: var(--d);
+    border-radius: 30px;
+  }
+
+  .logo {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: 15px;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .container {
+    width: 375px;
+    height: 100%;
+    size: 13px;
+  }
+
+  .targ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    size: 13px;
+
+  }
+
+  .drawers {
+    height: 260px;
+    width: 260px;
+    border-radius: 45px 45px 0px 0px;
+  }
+}
