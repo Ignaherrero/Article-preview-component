@@ -36,7 +36,7 @@
 
   .drawers {
     height: 300px;
-    width: 300px;
+    width: auto;
     border-radius: 12px 0px 0px 12px;
   }
 
@@ -61,7 +61,9 @@
 
   .avatar {
     border-radius: 100px;
-    width: 80px;
+    height: 80px;
+    width: auto;
+
   }
 
   .share {
@@ -78,6 +80,11 @@
     height: 20px;
     display: block;
     margin: 15px;
+  }
+
+  .btn-share {
+    width: 50px;
+    background-color: var(--b)
   }
 
   footer {
