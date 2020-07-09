@@ -66,48 +66,65 @@
 
   }
 
-  .share {
+  .popup {
     width: 50px;
     height: 50px;
     margin: 0 0 0 auto;
     align-self: center;
-    background: var(--d);
+    background-color: var(--d);
     border-radius: 30px;
-
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
   }
 
+  .popup:hover {
+    background-color: var(--a);
+    /* background-color: red; */
+  }
 
   .logo {
+    fill: white;
     width: 20px;
     height: 20px;
     display: block;
     margin: 15px;
   }
 
-  button {
-    border-radius: 100px;
+  .logo:hover {
+    fill: red;
   }
 
-  .btn-share {
+  .popuptext {
     width: 50px;
     background-color: var(--b);
-    width: 90px;
+    width: 200px;
     height: 80px;
     border-radius: 8px;
-
-    /* opacity: 1; */
-  }
-
-  .btn-share .ul::after {
-    content: "";
     position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
+    bottom: 140%;
+    right: -150%;
+    /* left: %; */
+    display: flex;
+    visibility: hidden;
+
   }
+
+  .popuptext span {
+    align-self: center;
+  }
+
+  .popuptext ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin: 0px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+  }
+
 
   li {
     list-style-type: none;
@@ -116,18 +133,11 @@
   }
 
   .active {
-    opacity: 0;
-    background-color: red;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: none;
+    visibility: visible;
   }
 
-  footer {
-    float: right;
-  }
 }
+
 
 @media only screen and (max-width: 920px) {
   html {
