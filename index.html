@@ -12,6 +12,7 @@
   <link rel="stylesheet" type="text/css" href="index.css">
   <link rel="stylesheet" type="text/css" href="normalize.css">
 
+
 </head>
 
 <body>
@@ -33,20 +34,43 @@
             <p>28 JUNE 2020</p>
           </div>
           <div class="share">
-            <img class=" logo" src="images/icon-share.svg" alt="Share">
+            <img onclick="mostrar()" class="logo" src="images/icon-share.svg" alt="Share">
+            <div class="btn-share">
+              <ul>
+                <li>
+                  <img src="images/icon-facebook.svg">
+                </li>
+                <li>
+                  <img src="images/icon-pinterest.svg">
+                </li>
+                <li>
+                  <img src="images/icon-twitter.svg">
+                </li>
+              </ul>
+            </div>
           </div>
-
         </div>
       </div>
     </div>
   </div>
   <footer>
-    <div class=" attribution">
+    <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend
         Mentor</a>.
       Coded by <a href="https://github.com/Ignaherrero">Ignacio H</a>.
     </div>
   </footer>
+  <script>
+    let shadesEl = document.querySelector('.btn-share');
+    function mostrar() {
+      if (shadesEl.classList.contains('active')) {
+        shadesEl.classList.remove('active');
+      } else {
+        shadesEl.classList.add('active');
+      }
+    }
+
+  </script>
 </body>
 
 </html>

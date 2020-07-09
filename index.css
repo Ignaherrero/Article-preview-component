@@ -73,7 +73,9 @@
     align-self: center;
     background: var(--d);
     border-radius: 30px;
+
   }
+
 
   .logo {
     width: 20px;
@@ -82,9 +84,44 @@
     margin: 15px;
   }
 
+  button {
+    border-radius: 100px;
+  }
+
   .btn-share {
     width: 50px;
-    background-color: var(--b)
+    background-color: var(--b);
+    width: 90px;
+    height: 80px;
+    border-radius: 8px;
+
+    /* opacity: 1; */
+  }
+
+  .btn-share .ul::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+
+  li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .active {
+    opacity: 0;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
   }
 
   footer {
