@@ -83,12 +83,13 @@
     /* background-color: red; */
   }
 
+  svg {
+    padding: 18px;
+  }
+
   .logo {
-    fill: white;
-    width: 20px;
-    height: 20px;
+    fill: rgb(255, 255, 255);
     display: block;
-    margin: 15px;
   }
 
   .logo:hover {
@@ -98,16 +99,14 @@
   .popuptext {
     width: 50px;
     background-color: var(--b);
-    width: 200px;
+    width: 300px;
     height: 80px;
     border-radius: 8px;
     position: absolute;
     bottom: 140%;
-    right: -150%;
-    /* left: %; */
+    left: -250%;
     display: flex;
     visibility: hidden;
-
   }
 
   .popuptext span {
