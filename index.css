@@ -63,7 +63,6 @@
     border-radius: 100px;
     height: 80px;
     width: auto;
-
   }
 
   .popup {
@@ -78,22 +77,12 @@
     cursor: pointer;
   }
 
-  .popup:hover {
-    background-color: var(--a);
-
-  }
-
   svg {
     padding: 18px;
   }
 
   .logo {
-    fill: rgb(255, 255, 255);
     display: block;
-  }
-
-  .logo:hover {
-    fill: red;
   }
 
   .popuptext {
@@ -137,7 +126,6 @@
 
 }
 
-
 @media only screen and (max-width: 920px) {
   html {
     display: flex;
@@ -172,6 +160,21 @@
     left: -380px;
     width: 460px;
     height: 100px;
+    z-index: -1;
   }
 
+  .popuptext ul {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .popup {
+    position: relative;
+    z-index: 1;
+  }
+
+  svg:hover {
+    background-color: white;
+    border-radius: 50px;
+  }
 }
