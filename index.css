@@ -8,21 +8,22 @@
 @media only screen and (max-width: 1440px) {
   body {
     background-color: var(--d);
+    height: 100vh;
   }
 
   .container {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
     size: 13px;
   }
 
-  h3 {
+  .title {
     font-weight: 700;
   }
 
-  p {
+  .text {
     font-weight: 500;
   }
 
@@ -122,6 +123,47 @@
 
   .active {
     visibility: visible;
+  }
+
+  .attribution {
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  .link {
+    display: inline-block;
+    padding: .3em;
+    background-color: var(--d)
+  }
+
+  .link:link,
+  .link:visited {
+    text-decoration: none;
+  }
+
+  .link:hover,
+  .link:active {
+    text-decoration: underline;
+  }
+
+  .link:link {
+    background: white;
+    color: blue;
+    border-radius: 5px;
+  }
+
+  .link:visited {
+    color: blue;
+  }
+
+  .link:hover {
+    background: coral;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .link:active {
+    transform: scale(.9);
   }
 
 }
