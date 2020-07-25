@@ -50,7 +50,6 @@
   }
 
   .content {
-    width: 400px;
     margin: 40px 40px 40px 32px;
   }
 
@@ -66,12 +65,18 @@
   .date {
     display: flex;
     flex-direction: column;
+    font-weight: 300;
+  }
+
+  .name {
+    font-weight: 700;
   }
 
   .avatar {
     border-radius: 100px;
     height: 40px;
     width: auto;
+    align-self: center;
   }
 
   .popup {
