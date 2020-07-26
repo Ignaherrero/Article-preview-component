@@ -47,8 +47,8 @@
     height: 280px;
     width: 285px;
     border-radius: 12px 0px 0px 12px;
-    background-image: url(/images/drawers.jpg);
-    background-size: cover;
+    object-fit: cover;
+    object-position: left center;
   }
 
   .content {
