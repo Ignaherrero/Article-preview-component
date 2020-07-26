@@ -2,10 +2,9 @@
 
 ## Bienvenido! 👋
 
-### Lista:
+### Article preview component:
 
-1. Article preview component:
-
+[Demo](https://nacho93-article-preview-component.netlify.app/)
 
 ![Design preview for the Article preview component coding challenge](./design/desktop-preview.jpg)
 
