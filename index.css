@@ -75,7 +75,7 @@
   }
 
   .avatar {
-    border-radius: 100px;
+    border-radius: 50%;
     height: 40px;
     width: auto;
     align-self: center;
@@ -87,14 +87,14 @@
     margin: 0 0 0 auto;
     align-self: center;
     background-color: var(--Light-Grayish-Blue);
-    border-radius: 30px;
+    border-radius: 50%;
     position: relative;
     display: inline-block;
     cursor: pointer;
   }
 
   svg {
-    padding: 18px;
+    padding: 9px;
   }
 
   .logo {
