@@ -94,7 +94,7 @@
   }
 
   svg {
-    padding: 9px;
+    /* padding: 9px; */
   }
 
   .logo {
@@ -102,33 +102,47 @@
   }
 
   .popuptext {
-    width: 50px;
     background-color: var(--Desaturated-Dark-Blue);
     width: 248px;
-    height: 80px;
+    height: 54px;
     border-radius: 8px;
     position: relative;
-    bottom: 140px;
-    right: 100px;
+    bottom: 100px;
+    right: 115px;
     display: flex;
     visibility: hidden;
+    padding: 0px;
+  }
+
+  .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: var(--Desaturated-Dark-Blue) transparent transparent transparent;
   }
 
   .popuptext span {
     align-self: center;
   }
 
+  .popuptext-share {
+    color: var(--Grayish-Blue);
+  }
+
   .popuptext ul {
     height: 100%;
     width: 100%;
     display: flex;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 0px;
   }
-
 
   li {
     list-style-type: none;
@@ -219,6 +233,10 @@
     width: 460px;
     height: 100px;
     z-index: -1;
+  }
+
+  .popuptext-share {
+    color: var(--Grayish-Blue);
   }
 
   .popuptext ul {
