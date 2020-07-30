@@ -107,9 +107,9 @@
     width: 248px;
     height: 80px;
     border-radius: 8px;
-    position: absolute;
-    bottom: 140%;
-    left: -250%;
+    position: relative;
+    bottom: 140px;
+    right: 100px;
     display: flex;
     visibility: hidden;
   }
