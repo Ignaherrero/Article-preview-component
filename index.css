@@ -26,6 +26,10 @@
     font-size: 1.7em;
   }
 
+  .title::first-letter {
+    text-transform: capitalize;
+  }
+
   .text {
     margin-top: 0px;
     font-weight: 500;
@@ -62,12 +66,14 @@
 
   .profile-name {
     margin-left: 15px;
+    text-transform: capitalize;
   }
 
   .date {
     display: flex;
     flex-direction: column;
     font-weight: 300;
+    text-transform: capitalize;
   }
 
   .name {
@@ -116,13 +122,13 @@
 
   .popuptext::after {
     content: "";
+    width: 22px;
+    height: 10px;
+    background-color: var(--Desaturated-Dark-Blue);
     position: absolute;
     top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 8px;
-    border-style: solid;
-    border-color: var(--Desaturated-Dark-Blue) transparent transparent transparent;
+    left: 113px;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
   }
 
   .popuptext span {
@@ -131,6 +137,7 @@
 
   .popuptext-share {
     color: var(--Grayish-Blue);
+    text-transform: uppercase;
   }
 
   .popuptext ul {
