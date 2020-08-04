@@ -67,6 +67,17 @@ body {
 .profile-name {
   margin-left: 15px;
   text-transform: capitalize;
+  align-self: center;
+}
+
+.name {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.date {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .date {
@@ -203,14 +214,17 @@ li {
 
 
 @media only screen and (max-width: 768px) {
-
-
   body {
     display: flex;
     flex-direction: column;
     min-height: 656px;
   }
 
+  .content {
+    margin: 0px 32px 0px 32px;
+    position: relative;
+    bottom: 16px;
+  }
 
   .container {
     width: 375px;
@@ -219,11 +233,14 @@ li {
   }
 
   .title {
+    margin-top: 40px;
     font-size: 1.2rem;
+    line-height: 20px;
   }
 
   .text {
-    font-size: .9rem;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
   }
 
   .targ {
@@ -233,6 +250,7 @@ li {
     align-items: center;
     width: 327px;
     height: 512px;
+
   }
 
   .drawers {
@@ -240,15 +258,18 @@ li {
     width: 327px;
     border-radius: 12px 12px 0px 0px;
     position: relative;
-    display: block
+    bottom: 16px;
+    display: block;
+    margin-bottom: 0;
   }
 
   .popuptext {
-    position: absolute;
-    bottom: -30px;
-    left: -380px;
-    width: 460px;
-    height: 100px;
+    position: relative;
+    bottom: 23px;
+    right: 262px;
+    width: 327px;
+    height: 64px;
+    z-index: 10;
   }
 
   .popuptext-share {
@@ -258,10 +279,6 @@ li {
   .popuptext ul {
     display: flex;
     justify-content: flex-start;
-  }
-
-  .popup {
-    position: relative;
   }
 
   svg:hover {
