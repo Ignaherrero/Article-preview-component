@@ -90,17 +90,15 @@
   .popup {
     width: 32px;
     height: 32px;
-    margin: 0 0 0 auto;
+    margin-left: auto;
     align-self: center;
     background-color: var(--Light-Grayish-Blue);
     border-radius: 50%;
-    position: relative;
-    display: inline-block;
     cursor: pointer;
   }
 
   svg {
-    /* padding: 9px; */
+    margin: 9px;
   }
 
   .logo {
@@ -113,8 +111,8 @@
     height: 54px;
     border-radius: 8px;
     position: relative;
-    bottom: 100px;
-    right: 115px;
+    bottom: 110px;
+    right: 110px;
     display: flex;
     visibility: hidden;
     padding: 0px;
