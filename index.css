@@ -8,7 +8,6 @@
 
 
 body {
-  font-size: 13px;
   background-color: var(--Light-Grayish-Blue);
   height: 100vh;
 }
@@ -24,7 +23,7 @@ body {
   font-weight: 700;
   margin-top: 0px;
   margin-bottom: 24px;
-  font-size: 1.7em;
+  font-size: 1.7rem;
 }
 
 .title::first-letter {
@@ -34,7 +33,7 @@ body {
 .text {
   margin-top: 0px;
   font-weight: 500;
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 19px;
 }
 
@@ -162,12 +161,12 @@ li {
 
 .attribution {
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 .link {
   display: inline-block;
-  padding: .3em;
+  padding: .3rem;
   background-color: var(--Light-Grayish-Blue)
 }
 
