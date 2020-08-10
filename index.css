@@ -4,8 +4,10 @@
   --Grayish-Blue: hsl(212, 23%, 69%);
   --Light-Grayish-Blue: hsl(210, 46%, 95%);
   font-size: 13px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-
 
 body {
   background-color: var(--Light-Grayish-Blue);
