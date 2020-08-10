@@ -246,34 +246,31 @@ li {
     margin-bottom: 30px;
   }
 
+  .popuptext::after {
+    content: none;
+  }
+
   .targ {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* align-content: space-between; */
     width: 327px;
     height: 512px;
-
   }
 
   .drawers {
     height: 200px;
     width: 327px;
     border-radius: 12px 12px 0px 0px;
-    /* position: relative; */
-    /* align-self: flex-start; */
-    /* bottom: 16px; */
     display: block;
-    margin-bottom: 0;
   }
 
   .popuptext {
     position: relative;
-    bottom: 23px;
+    bottom: 44px;
     right: 262px;
     width: 327px;
     height: 64px;
-    z-index: 10;
   }
 
   .popuptext-share {
